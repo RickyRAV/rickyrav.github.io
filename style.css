@@ -1,12 +1,21 @@
-
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 body{
     background-color: #1B2432;
+    overflow: auto;
+    width: 100%;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid white; */
 }
+
+/* main-page */
 .content{
     position: relative;
     font-family: 'Raleway', sans-serif;
@@ -37,10 +46,16 @@ body{
         font-size: 3em;
     }
 }
+p{
+    color: white;
+    margin-top: 5.5em;
+    font-size: 2em;
+}
+
+/* footer-css*/
 .fixed-bottom{
     color: white;
     background-color: #121420;
-    position: fixed;
     height: 50px;
     bottom: 0;
     width: 100%;
@@ -48,11 +63,6 @@ body{
 .text-center{
     font-family: 'Raleway';
     padding-top: 13px;
-}
-p{
-    color: white;
-    margin-top: 5.5em;
-    font-size: 2em;
 }
 .social-footer-icons .fa {
     font-size: 1.3rem;
@@ -74,4 +84,28 @@ ul{
     font-size: 2em;
     display: flex;
     justify-content: inline-block;
+}
+i {
+	margin-right: 10px;
+}
+
+/* header */
+.navbar-logo{
+    padding: 15px;
+    color: #fff;
+    font-family: 'Raleway';
+}
+.navbar-mainbg{
+    background-color: #121420;
+    padding: 0px;
+}
+.btn{
+    border-radius: 2em;
+    font-family: 'Raleway';
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.7em 0.5em -0.4em cyan;
+  transform: translateY(-0.25em);
+  transition: 0.25s;
 }
